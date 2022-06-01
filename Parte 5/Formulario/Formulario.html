@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>Formulário</title>
+		<meta charset="UTF-8">
+	</head>
+	
+	<body background="./imagens/fundo.jpg">
+	
+		<font face="calibri" color="Black" size="4">	
+		<center>
+		<img src="./imagens/logo_formatura.png" 
+		     alt="Logo de Formatura"
+			 width="300"/>
+			 
+		<form method="post">
+			
+			<table border="0" cellspacing="0" cellpadding="8" bgcolor="White">
+			
+				<tr>
+					<td colspan="2" align="center">
+						<font face="calibri" color="#D2691E" size="4">
+							<h2>Formulário de Cadastro de Aluno</h2>
+						</font>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Nome Completo:</b></td>
+					<td><input type="text"
+							   id="campoNome" 
+            				   name="campoNome" 
+							   placeholder="Digite seu nome"
+							   size="45" 
+							   maxlength="40" 
+							   required />   
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Senha:</b></td>
+					<td><input type="password" 
+							   id="campoSenha"
+					           name="campoSenha" 
+							   placeholder="Digite uma senha"
+							   size="23"
+							   maxlength="20" 
+							   required /> 
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>CPF:</b></td>
+					<td><input type="text"
+							   id="campoCPF"
+            				   name="campoCPF" 
+							   placeholder="xxx.xxx.xxx-xx"
+							   size="23"
+							   maxlength="14" 
+							   required />   
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right"><b>Sexo:</b></td>
+					<td>
+						<input type="radio" id="campoSexo" name="campoSexo" value="Masculino" required />Masculino
+						<input type="radio" id="campoSexo" name="campoSexo" value="Feminino"/>Feminino
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Data de Nascimento:</b></td>
+					<td><input type="datetime-local" name="campoDataHora"/></td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Telefone:</b></td>
+					<td><input type="text"
+							   id="campoTelefone" 
+            				   name="campoTelefone" 
+							   placeholder="(xx) xxxxx-xxxx"
+							   size="23"
+							   maxlength="18" 
+							   required />   
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>E-mail:</b></td>
+					<td><input type="email" 
+							   id="campoEmail" 
+							   name="campoEmail"
+							   placeholder="exemplo@email.com" 
+							   size="23" 
+							   maxlength="20" 
+							   required />
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Estado:</b></td>
+					<td>
+						<select id="campoEstado" name="campoEstado">
+							<option required>Acre
+							<option>Alagoas
+							<option>Amapá 
+							<option>Amazonas 
+							<option>Bahia 
+							<option>Ceará 
+							<option>Distrito Federal 
+							<option>Espírito Santo 
+							<option>Goiás 
+							<option>Maranhão 
+							<option>Mato Grosso
+							<option>Mato Grosso do Sul
+							<option>Minas Gerais
+							<option>Pará 
+							<option>Paraíba 
+							<option>Paraná 
+							<option>Pernambuco
+							<option>Piauí 
+							<option>Rio de Janeiro
+							<option>Rio Grande do Norte
+							<option>Rio Grande do Sul 
+							<option>Rondônia
+							<option>Roraima 
+							<option>Santa Catarina 
+							<option selected>São Paulo
+							<option>Sergipe 
+							<option>Tocantins 
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Cidade:</b></td>
+					<td><input type="text" 
+							   id="campoCidade" 
+							   name="campoCidade"
+							   placeholder="Digite sua cidade" 
+							   size="23" 
+							   maxlength="20" 
+							   required />
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Curso:</b></td>
+					<td><input type="text" 
+							   id="campoCurso" 
+							   name="campoCurso"
+							   placeholder="Digite seu curso" 
+							   size="30" 
+							   maxlength="30" 
+							   required />
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Turno:</b></td>
+					<td>
+						<select id="campoTurno" name="campoTurno">
+							<option>Manhã
+							<option>Tarde
+							<option>Noite
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Cursos livres de interesse:</b></td>
+					<td>
+						<input type="checkbox" id="campoCursolivre" name="campoCursolivre" value="Excel"/>Excel
+						<input type="checkbox" id="campoCursolivre" name="campoCursolivre" value="Word"/>Word
+						<input type="checkbox" id="campoCursolivre" name="campoCursolivre" value="Informática Básica"/>Informática Básica
+						<input type="checkbox" id="campoCursolivre" name="campoCursolivre" value="PowerPoint"/>PowerPoint
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Anexe uma foto:</b></td>
+					<td>
+						<input type="file" name="fileupload" accept="image/*" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><b>Observação:</b></td>
+					<td>
+						<textarea id="campoObs"
+            					  name="campoObs" 
+								  placeholder="Ecreva aqui alguma observação" 
+								  cols="45" 
+								  rows="4"></textarea>
+					</td>
+				</tr>
+				
+			</table>
+			
+			<input type="submit" name="enviar" value="Enviar"/>
+			<input type="reset" name="apagar" value="Apagar"/>
+			
+		</form>
+		</center>
+		</font>
+		<p></br></br></p>
+	
+	</body>
+	
+</html>

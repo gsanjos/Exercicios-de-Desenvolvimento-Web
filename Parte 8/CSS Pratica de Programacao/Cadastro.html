@@ -1,0 +1,79 @@
+<html>
+
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		
+		<div id="posicaoLogo">
+			<img id="imagemLogo" src="./imagens/logo.jpg" alt="Logo"/>
+		</div>
+		
+		<div id="titulo">
+			<h2>Cadastro de Aluno de Hogwarts:</br></br></br></h2>
+		</div>
+		
+		<img id="posicaoImagem" src="./imagens/castelo.png" alt="Castelo de Hogwarts"/>
+		
+		<div id="formulario">
+			<form method="post">
+				
+				Nome: <input type="text"
+								   id="campoNome" 
+								   name="campoNome" 
+								   placeholder="Digite seu nome"
+								   size="45" 
+								   maxlength="40" 
+								   required /></br></br>
+								   
+				Senha: <input type="password" 
+								   id="campoSenha"
+								   name="campoSenha" 
+								   placeholder="Digite uma senha"
+								   size="23"
+								   maxlength="20" 
+								   required /></br></br>
+								   
+				Sexo: <input type="radio" id="campoSexo" name="campoSexo" value="Masculino" required />Masculino
+					  <input type="radio" id="campoSexo" name="campoSexo" value="Feminino"/>Feminino</br></br>
+					  
+				Data de Nascimento: <input type="datetime-local" name="campoDataHora"/></br></br>
+				
+				Email: <input type="email" 
+								   id="campoEmail" 
+								   name="campoEmail"
+								   placeholder="exemplo@email.com" 
+								   size="23" 
+								   maxlength="20" 
+								   required /></br></br>
+								   
+				Casa de Hogwarts: <select id="campoCasa" name="campoCasa">
+								<option>Corvinal
+								<option>Grifinória
+								<option>Lufa-Lufa
+								<option>Sonserina
+								</select></br></br>
+								
+				País: <input type="text"
+								   id="campoPais" 
+								   name="campoPais" 
+								   placeholder="Digite seu país"
+								   size="35" 
+								   maxlength="30" 
+								   required /></br></br>
+								   
+				<input type="submit" name="enviar" value="Enviar"/>
+				<input type="reset" name="apagar" value="Apagar"/>
+			</form>
+		</div>
+		
+		<div id="index">
+		<div id = "quadrado1"><img class="imagemZ" src="./imagens/imagemHP1.jpg" alt="Imagem do Harry Potter"/></div>
+		<div id = "quadrado2"><img class="imagemZ" src="./imagens/imagemHP2.jpg" alt="Imagem do Harry Potter"/></div>
+		<div id = "quadrado3"><img class="imagemZ" src="./imagens/imagemHP3.jpg" alt="Imagem do Harry Potter"/></div>
+		</div>
+	</body>
+	
+</html>

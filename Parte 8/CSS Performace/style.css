@@ -1,0 +1,65 @@
+body{
+	font-size: 17px;
+	background-image: url("./imagens/fundo.png");
+} 
+
+#topo{
+	background-color:Black;
+} 
+ 
+#topo h1{
+	color: #ff0;
+	text-align: center;
+	font-size: 25px;
+}
+
+h1, h2{
+	text-align:left;
+	color: #00008B;
+	font-family: Gabriola;
+	font-size: 24px;
+} 
+
+.texto2{
+	text-align:left;
+	color:#DAA520;
+	font-family: Gabriola;
+	font-size: 24px;
+} 
+
+#posicaoLogo{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-100px;
+	margin-top:-230px;
+ } 
+ 
+#imagemLogo{
+	width: 150px;
+}
+
+#texto{
+	display: block;
+    margin: 10px;
+    padding: 10px;
+	margin-left: 25%;
+	width: 50%;
+	margin-top:20%;
+	background-color: white;
+	position:absolute;
+ } 
+ 
+ img{
+	width: 250px;
+	margin-left: 50%;
+ }
+ 
+ p{
+	font-family: calibri;
+	font-size: 16px;
+	text-align: justify;
+ }
+ 
+
+ 
